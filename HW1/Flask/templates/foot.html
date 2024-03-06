@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Выбрана категория: Обувь</h2>
+    {% for pr, value in products.items() %}
+        <h3>Вид товара: {{pr}}</h3>
+        <p>Цвет: {{value[1]}}</p>
+        <p>Цена: {{value[0]}}</p>
+        <button>Купить</button>
+
+    {% endfor %}
+{% endblock %}
