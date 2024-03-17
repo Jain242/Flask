@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<br lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список книг</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<br>
+    <h1>Список всех книг</h1>
+    
+        {% for book in books %}
+        {{ book.name }} ({{ book.years_start }} года) - {{ book.author.name }} {{ book.author.lastname }}</br>
+        {% endfor %}
+   
+</body>
+</html>

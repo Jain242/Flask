@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ввод данных</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="row">
+        {% for st in student%}
+        <p>Имя: {{st.firstname}}<br>
+        Фамилия: {{st.lastname}}<br>
+        Возраст: {{st.age}}<br>
+        Гендер: {{st.gender}}<br>
+        Группа: {{st.group}}<br>
+        ID факультета: {{st.fags.fag_name}}<br>
+        </p>
+        {% endfor%}
+    </div>
+</body>
+</html>
