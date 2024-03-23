@@ -1,4 +1,4 @@
-from HW3 import app2
+from HW6 import app1
 
 if __name__ == "__main__":
-    app2.run(debag=True)
+    app1.run(debag=True)
